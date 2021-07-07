@@ -7,9 +7,61 @@
         <meta name="description" content="Description de l'association">
         <!-- Tailwindcss -->
         <link rel="stylesheet" href="tailwind.css">
-        <title>Association</title>
+        <title>Bee Saver - Sauvons les abeilles</title>
     </head>
-    <body>
-        
+    <body class="font-openSans">
+        <!-- Header -->
+        <header>
+            <div class="bg-yellow-300 fixed w-full py-4 shadow-sm">
+                <div class="max-w-screen-lg mx-auto flex justify-between items-center text-gray-800 px-4">
+                    <div class="text-4xl uppercase flex items-center space-x-2">
+                        <img src="images/logo.png" alt="Logo Bee Saver" class="h-10 w-auto">
+                        <div>
+                            <span class="font-bold">Bee</span>
+                            <span class="font-light">Saver</span>
+                        </div>
+                    </div>
+                    <nav class="hidden md:block">
+                        <ul class="flex space-x-4">
+                            <li><a href="#le-declin" class="inline-block pt-4 pb-2 border-b-4 border-transparent hover:border-gray-800">Le déclin</a></li>
+                            <li><a href="#les-causes" class="inline-block pt-4 pb-2 border-b-4 border-transparent hover:border-gray-800">Les causes</a></li>
+                            <li><a href="#les-consequences" class="inline-block pt-4 pb-2 border-b-4 border-transparent hover:border-gray-800">Les conséquences</a></li>
+                            <li><a href="#les-gestes" class="inline-block pt-4 pb-2 border-b-4 border-transparent hover:border-gray-800">Les gestes à adopter</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="h-screen bg-hero-sm md:bg-hero-md lg:bg-hero bg-cover bg-center flex px-4">
+                <div class="m-auto grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="text-gray-900 space-y-2 text-center lg:text-left">
+                        <span class="uppercase font-bold tracking-wide">Notre écosystème est menacé</span>
+                        <h1 class="text-5xl font-light">Sauvons les abeilles</h1>
+                    </div>
+                    <div class="bg-white rounded-sm shadow-sm p-6">
+                        <h2 class="mb-6 text-xl text-center">Je soutiens <span class="font-bold">Bee Saver</span></h2>
+                        <form method="post">
+                            <div class="mb-3 flex space-x-4">
+                                <div class="rounded px-6 py-4 bg-gray-200 text-gray-800 text-center cursor-pointer flex-1 hover:bg-yellow-300">5€</div>
+                                <div class="rounded px-6 py-4 bg-gray-200 text-gray-800 text-center cursor-pointer flex-1 hover:bg-yellow-300">10€</div>
+                                <div class="rounded px-6 py-4 bg-gray-200 text-gray-800 text-center cursor-pointer flex-1 hover:bg-yellow-300">15€</div>
+                                <div class="rounded px-6 py-4 bg-gray-200 text-gray-800 text-center cursor-pointer flex-1 hover:bg-yellow-300">20€</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="amount" class="block mb-1">Montant au choix</label>
+                                <input type="number" id="amount" amount="amount" class="w-full rounded bg-gray-200 p-4 focus:outline-none focus:ring focus:ring-gray-400 focus:ring-opacity-50">
+                            </div>
+
+                            <button type="submit" class="rounded-sm bg-yellow-300 text-gray-800 px-4 py-4 w-full text-lg font-bold flex items-center justify-center space-x-4 transition hover:bg-yellow-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+                                </svg>
+                                <span>Je fais un don</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
     </body>
 </html>
