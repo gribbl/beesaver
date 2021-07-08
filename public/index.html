@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Description de l'association">
+        <meta name="description" content="Bee Saver est une association qui sensibilise sur le danger de la disparition des abeilles">
         <!-- Tailwindcss -->
         <link rel="stylesheet" href="tailwind.css">
         <title>Bee Saver - Sauvons les abeilles</title>
@@ -12,8 +12,8 @@
     <body class="font-openSans">
         <!-- Header -->
         <header>
-            <div class="bg-yellow-300 fixed w-full py-4 shadow-sm">
-                <div class="max-w-screen-lg mx-auto flex justify-between items-center text-gray-800 px-4">
+            <div class="bg-yellow-300 fixed w-full py-4 px-10 shadow-sm">
+                <div class="max-w-screen-lg mx-auto flex justify-between items-center text-gray-800">
                     <div class="text-4xl uppercase flex items-center space-x-2">
                         <img src="images/logo.png" alt="Logo Bee Saver" class="h-10 w-auto">
                         <div>
@@ -21,7 +21,7 @@
                             <span class="font-light">Saver</span>
                         </div>
                     </div>
-                    <nav class="hidden md:block">
+                    <nav class="hidden lg:block">
                         <ul class="flex space-x-4">
                             <li><a href="#le-declin" class="inline-block pt-4 pb-2 border-b-4 border-transparent hover:border-gray-800">Le déclin</a></li>
                             <li><a href="#les-causes" class="inline-block pt-4 pb-2 border-b-4 border-transparent hover:border-gray-800">Les causes</a></li>
@@ -31,20 +31,20 @@
                     </nav>
                 </div>
             </div>
-            <div class="h-screen bg-hero-sm md:bg-hero-md lg:bg-hero bg-cover bg-center flex px-4">
-                <div class="m-auto grid lg:grid-cols-2 gap-16 items-center">
+            <div class="min-h-screen bg-hero-sm md:bg-hero-md lg:bg-hero bg-cover bg-center flex px-10">
+                <div class="m-auto grid lg:grid-cols-2 gap-8 md:gap-16 items-center">
                     <div class="text-gray-900 space-y-2 text-center lg:text-left">
-                        <span class="uppercase font-bold tracking-wide">Notre écosystème est menacé</span>
+                        <h2 class="uppercase font-bold tracking-wide">Notre écosystème est menacé</h2>
                         <h1 class="text-5xl font-light">Sauvons les abeilles</h1>
                     </div>
-                    <div class="bg-white rounded-sm shadow-sm p-6">
+                    <div class="bg-white rounded-sm shadow-sm p-10">
                         <h2 class="mb-6 text-xl text-center">Je soutiens <span class="font-bold">Bee Saver</span></h2>
                         <form method="post">
-                            <div class="mb-3 flex space-x-4">
-                                <div class="rounded px-6 py-4 bg-gray-200 text-gray-800 text-center cursor-pointer flex-1 hover:bg-yellow-300">5€</div>
-                                <div class="rounded px-6 py-4 bg-gray-200 text-gray-800 text-center cursor-pointer flex-1 hover:bg-yellow-300">10€</div>
-                                <div class="rounded px-6 py-4 bg-gray-200 text-gray-800 text-center cursor-pointer flex-1 hover:bg-yellow-300">15€</div>
-                                <div class="rounded px-6 py-4 bg-gray-200 text-gray-800 text-center cursor-pointer flex-1 hover:bg-yellow-300">20€</div>
+                            <div class="mb-3 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+                                <div class="rounded px-6 py-4 bg-gray-200 text-gray-800 text-center cursor-pointer hover:bg-yellow-300">5€</div>
+                                <div class="rounded px-6 py-4 bg-gray-200 text-gray-800 text-center cursor-pointer hover:bg-yellow-300">10€</div>
+                                <div class="rounded px-6 py-4 bg-gray-200 text-gray-800 text-center cursor-pointer hover:bg-yellow-300">15€</div>
+                                <div class="rounded px-6 py-4 bg-gray-200 text-gray-800 text-center cursor-pointer hover:bg-yellow-300">20€</div>
                             </div>
 
                             <div class="mb-3">
@@ -63,5 +63,44 @@
                 </div>
             </div>
         </header>
+
+        <!-- Section 1 -->
+        <section class="bg-gray-100">
+            <div class="max-w-screen-lg mx-auto py-8 md:py-24 grid md:grid-cols-2 items-center gap-8 md:gap-16 px-10">
+                <div>
+                    <h3 class="font-bold text-2xl text-gray-800 mb-6">Le déclin des abeilles</h3>
+                    <p class="text-gray-600 mb-3 leading-loose">
+                        Le nombre d’abeilles diminue dans le monde entier. Au cours des dernières périodes hivernales, la mortalité des colonies d’abeilles domestiques en Europe se situait autour de 20 %. Ce déclin n’est pas à mettre sur le compte d’un facteur unique. Il est sans doute le résultat de causes multiples, connues et non identifiées, agissant séparément ou en combinaison.
+                    </p>
+                </div>
+                <img src="images/bee-4.jpg" alt="Photo d'une abeille" class="rounded-lg h-64 md:h-96 w-full object-cover object-center">
+            </div>
+        </section>
+
+        <!-- Section 2 -->
+        <section>
+            <div class="max-w-screen-lg mx-auto py-8 md:py-24 grid md:grid-cols-2 items-center gap-8 md:gap-16 px-10">
+                <img src="images/bee-3.jpg" alt="Photo d'une abeille" class="rounded-lg h-64 md:h-96 w-full object-cover object-center order-1">
+                <div class="md:order-1">
+                    <h3 class="font-bold text-2xl text-gray-800 mb-6">Les causes de la disparition des abeilles</h3>
+                    <p class="text-gray-600 mb-3 leading-loose">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error tempore sunt eum voluptatibus dicta quo soluta, recusandae odio voluptatum? Omnis, at. Rem natus fuga harum illo et sapiente nobis suscipit beatae assumenda, ullam, soluta inventore unde earum aperiam id eligendi.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3 -->
+        <section class="bg-gray-100">
+            <div class="max-w-screen-lg mx-auto py-8 md:py-24 grid md:grid-cols-2 items-center gap-8 md:gap-16 px-10">
+                <div>
+                    <h3 class="font-bold text-2xl text-gray-800 mb-6">Les conséquences de la disparition des abeilles</h3>
+                    <p class="text-gray-600 mb-3 leading-loose">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error tempore sunt eum voluptatibus dicta quo soluta, recusandae odio voluptatum? Omnis, at. Rem natus fuga harum illo et sapiente nobis suscipit beatae assumenda, ullam, soluta inventore unde earum aperiam id eligendi.
+                    </p>
+                </div>
+                <img src="images/bee-5.jpg" alt="Photo d'une abeille" class="rounded-lg h-64 md:h-96 w-full object-cover object-center">
+            </div>
+        </section>
     </body>
 </html>
