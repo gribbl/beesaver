@@ -52,7 +52,7 @@
                                 <input type="number" id="amount" amount="amount" class="w-full rounded bg-gray-200 p-4 focus:outline-none focus:ring focus:ring-gray-400 focus:ring-opacity-50">
                             </div>
 
-                            <button type="submit" class="rounded-sm bg-yellow-300 text-gray-800 px-4 py-4 w-full text-lg font-bold flex items-center justify-center space-x-4 transition hover:bg-yellow-400">
+                            <button type="submit" class="rounded-sm bg-yellow-300 text-gray-800 px-4 py-4 w-full text-lg font-bold flex items-center justify-center space-x-4 transition hover:bg-yellow-400 focus:outline-none focus:ring focus:ring-yellow-400 focus:ring-opacity-50">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
                                 </svg>
@@ -65,11 +65,11 @@
         </header>
 
         <!-- Section 1 -->
-        <section class="bg-gray-100">
-            <div class="max-w-screen-lg mx-auto py-8 md:py-24 grid md:grid-cols-2 items-center gap-8 md:gap-16 px-10">
+        <section class="bg-gray-100 px-10" id="le-declin">
+            <div class="max-w-screen-lg mx-auto py-8 md:py-24 grid md:grid-cols-2 items-center gap-4 md:gap-16">
                 <div>
                     <h3 class="font-bold text-2xl text-gray-800 mb-6">Le déclin des abeilles</h3>
-                    <p class="text-gray-600 mb-3 leading-loose">
+                    <p class="text-gray-600 leading-loose">
                         Le nombre d’abeilles diminue dans le monde entier. Au cours des dernières périodes hivernales, la mortalité des colonies d’abeilles domestiques en Europe se situait autour de 20 %. Ce déclin n’est pas à mettre sur le compte d’un facteur unique. Il est sans doute le résultat de causes multiples, connues et non identifiées, agissant séparément ou en combinaison.
                     </p>
                 </div>
@@ -78,28 +78,43 @@
         </section>
 
         <!-- Section 2 -->
-        <section>
-            <div class="max-w-screen-lg mx-auto py-8 md:py-24 grid md:grid-cols-2 items-center gap-8 md:gap-16 px-10">
+        <section class="px-10" id="les-causes">
+            <div class="max-w-screen-lg mx-auto py-8 md:py-24 grid md:grid-cols-2 items-center gap-4 md:gap-16">
                 <img src="images/bee-3.jpg" alt="Photo d'une abeille" class="rounded-lg h-64 md:h-96 w-full object-cover object-center order-1">
                 <div class="md:order-1">
                     <h3 class="font-bold text-2xl text-gray-800 mb-6">Les causes de la disparition des abeilles</h3>
-                    <p class="text-gray-600 mb-3 leading-loose">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error tempore sunt eum voluptatibus dicta quo soluta, recusandae odio voluptatum? Omnis, at. Rem natus fuga harum illo et sapiente nobis suscipit beatae assumenda, ullam, soluta inventore unde earum aperiam id eligendi.
+                    <p class="text-gray-600 leading-loose">
+                        Les pesticides et insecticides sont la première cause de disparition des abeilles en Europe, et plus particulièrement les pesticides néonicotinoïdes dont l’avenir était en suspens du côté de la Commission Européenne depuis 2013. Après des études récentes démontrant leur dangerosité sur les populations d’abeilles, l’Union Européenne a finalement décidé le 27 avril dernier de suspendre l’utilisation de 3 de ces pesticides.
                     </p>
                 </div>
             </div>
         </section>
 
         <!-- Section 3 -->
-        <section class="bg-gray-100">
-            <div class="max-w-screen-lg mx-auto py-8 md:py-24 grid md:grid-cols-2 items-center gap-8 md:gap-16 px-10">
+        <section class="bg-gray-100 px-10" id="les-consequences">
+            <div class="max-w-screen-lg mx-auto py-8 md:py-24 grid md:grid-cols-2 items-center gap-4 md:gap-16">
                 <div>
                     <h3 class="font-bold text-2xl text-gray-800 mb-6">Les conséquences de la disparition des abeilles</h3>
-                    <p class="text-gray-600 mb-3 leading-loose">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error tempore sunt eum voluptatibus dicta quo soluta, recusandae odio voluptatum? Omnis, at. Rem natus fuga harum illo et sapiente nobis suscipit beatae assumenda, ullam, soluta inventore unde earum aperiam id eligendi.
+                    <p class="text-gray-600 leading-loose">
+                        Indispensables pour la pollinisation des fleurs et végétaux, les abeilles jouent un rôle très important dans notre écosystème. Environ 35% de la production mondiale de nourriture dépend de la pollinisation. 80% de nos espèces végétales ont également recours à la pollinisation pour leur survie. La disparition progressive des abeilles pose donc de graves problèmes de biodiversité, mais également des problèmes économiques.
                     </p>
                 </div>
                 <img src="images/bee-5.jpg" alt="Photo d'une abeille" class="rounded-lg h-64 md:h-96 w-full object-cover object-center">
+            </div>
+        </section>
+
+        <!-- Section 4 -->
+        <section class="bg-yellow-300 py-8 md:py-24">
+            <div class="max-w-screen-lg mx-auto">
+                <h3 class="text-3xl font-bold text-center tracking-wide mb-10">Les gestes à adopter</h3>
+                <div class="grid grid-cols-3 gap-8">
+                    <div class="bg-white p-10 rounded shadow-sm transition transform hover:scale-105 hover:shadow"></div>
+                    <div class="bg-white p-10 rounded shadow-sm transition transform hover:scale-105 hover:shadow"></div>
+                    <div class="bg-white p-10 rounded shadow-sm transition transform hover:scale-105 hover:shadow"></div>
+                    <div class="bg-white p-10 rounded shadow-sm transition transform hover:scale-105 hover:shadow"></div>
+                    <div class="bg-white p-10 rounded shadow-sm transition transform hover:scale-105 hover:shadow"></div>
+                    <div class="bg-white p-10 rounded shadow-sm transition transform hover:scale-105 hover:shadow"></div>
+                </div>
             </div>
         </section>
     </body>
