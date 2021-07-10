@@ -75,10 +75,13 @@
 
         <!-- Main -->
         <main class="bg-gray-100">
-            <div class="max-w-screen-lg mx-auto px-10 pt-48 pb-24">
-                <h1 class="text-5xl font-bold mb-10 text-gray-800">Les événements</h1>
+            <div class="max-w-screen-lg mx-auto px-10 pt-28 pb-10 md:pt-48 md:pb-24">
+                <h1 class="text-3xl md:text-5xl font-bold mb-10 text-gray-800">Les événements</h1>
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden mb-10 transition transform hover:scale-105">
-                    <img src="images/honey.jpg" alt="Photo de fleurs" class="w-full h-64 object-cover object-top">
+                    <picture>
+                        <source srcset="images/honey-sm.jpg" media="(max-width: 40em)" class="rounded-lg h-64 md:h-96 w-full object-cover object-center">
+                        <img srcset="images/honey.jpg" alt="Photo d'un pot de miel'" class="w-full h-36 md:h-64 object-cover object-top">
+                    </picture>
                     <div class="p-6 ">
                         <h2 class="font-bold text-2xl mb-6 text-gray-800">Initiation à l'apiculture naturelle</h2>
                         <p class="leading-loose text-gray-600 mb-3">Au travers d’atelier d’initiation à l’apiculture, nous souhaitons vous accompagner à vous engager à votre échelle pour la protection de l’abeille et de la biodiversité. Lors de cet atelier partez à la découverte du monde des abeilles, de leur rôle dans la colonie et de la fabrication de leur précieux miel.</p>
@@ -87,7 +90,10 @@
                 </div>
 
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden mb-10 transition transform hover:scale-105">
-                    <img src="images/flowers.jpg" alt="Photo de fleurs" class="w-full h-64 object-cover object-bottom">
+                    <picture>
+                        <source srcset="images/flowers-sm.jpg" media="(max-width: 40em)" class="rounded-lg h-64 md:h-96 w-full object-cover object-center">
+                        <img srcset="images/flowers.jpg" alt="Photo de fleurs" class="w-full h-36 md:h-64 object-cover object-bottom">
+                    </picture>
                     <div class="p-6 ">
                         <h2 class="font-bold text-2xl mb-6 text-gray-800">Semer des fleurs sauvages</h2>
                         <p class="leading-loose text-gray-600 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi facere voluptatem laudantium expedita, repudiandae dolores dicta rerum reiciendis a, eum impedit obcaecati quae magnam enim, vitae accusantium id! Dolorum deserunt consectetur maiores expedita, asperiores a optio minus sed. Sunt delectus provident perspiciatis aperiam eaque blanditiis accusantium sit natus tenetur minima.</p>
@@ -96,7 +102,10 @@
                 </div>
 
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden mb-10 transition transform hover:scale-105">
-                    <img src="images/tree.jpg" alt="Photo de fleurs" class="w-full h-64 object-cover object-bottom">
+                    <picture>
+                        <source srcset="images/tree-sm.jpg" media="(max-width: 40em)" class="rounded-lg h-64 md:h-96 w-full object-cover object-center">
+                        <img srcset="images/tree.jpg" alt="Photo d'une forêt" class="w-full h-36 md:h-64 object-cover object-bottom">
+                    </picture>
                     <div class="p-6 ">
                         <h2 class="font-bold text-2xl mb-6 text-gray-800">Planter des arbustes</h2>
                         <p class="leading-loose text-gray-600 mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, voluptate saepe molestiae asperiores ullam officia cum soluta numquam autem tenetur eius? Aspernatur sunt iusto est expedita ad nisi ratione, reprehenderit dolorum repellat deleniti debitis assumenda velit veritatis eum illum vel eius sint voluptas pariatur quisquam magni officia ex quam! Amet.</p>
@@ -108,21 +117,22 @@
 
         <!-- Footer -->
         <footer class="bg-gray-900 text-gray-100 py-16">
-            <div class="max-w-screen-lg mx-auto grid md:grid-cols-3 divide-y divide-gray-500 md:divide-y-0 justify-items-center items-center">
+            <div class="max-w-screen-lg mx-auto grid md:grid-cols-3 divide-y divide-gray-500 md:divide-y-0 justify-items-center items-center px-10">
                 <div class="text-center space-y-1 p-6 md:p-0">
                     <div class="font-bold">Bee Saver</div>
                     <div class="text-gray-400">99, rue des Dunes</div>
                     <div class="text-gray-400">35400 SAINT-MALO</div>
                 </div>
 
-                <ul class="text-center space-y-1 text-gray-400 p-6 md:p-0">
+                <ul class="text-center w-full space-y-1 text-gray-400 p-6 md:p-0">
                     <li><a href="index.html#le-declin" class="hover:text-gray-200">Le déclin</a></li>
                     <li><a href="index.html#les-causes" class="hover:text-gray-200">Les causes</a></li>
                     <li><a href="index.html#les-consequences" class="hover:text-gray-200">Les conséquences</a></li>
+                    <li><a href="index.html#les-gestes" class="hover:text-gray-200">Les gestes à adopter</a></li>
                     <li><a href="evenements.html" class="hover:text-gray-200">Les événements</a></li>
                 </ul>
 
-                <a href="#" class="flex space-x-5 text-gray-400 hover:text-gray-200 p-6 md:p-0">
+                <a href="#" class="flex w-full space-x-5 text-gray-400 hover:text-gray-200 p-6 md:p-0 justify-center">
                     <span>Retourner en haut</span>
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 11l3-3m0 0l3 3m-3-3v8m0-13a9 9 0 110 18 9 9 0 010-18z" />
