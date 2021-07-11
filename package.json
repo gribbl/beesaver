@@ -7,7 +7,7 @@
     "build": "postcss src/style.css -o public/tailwind.css"
   },
   "keywords": [],
-  "author": "Jean Castellotti",
+  "author": "JeanDevFR",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.2.6",

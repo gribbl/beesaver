@@ -4,7 +4,8 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="L'association Bee Saver défend la protection des abeilles et de la biodiversité">
+        <meta name="description" content="L'association Bee Saver agit pour la protection des abeilles et de la biodiversité">
+        <meta name="robots" content="index, follow">        
         <link rel="shortcut icon" href="images/favicon.png" type="image/png">
         <!-- Tailwindcss -->
         <link rel="stylesheet" href="tailwind.css">
@@ -12,66 +13,111 @@
         <script defer src="https://unpkg.com/alpinejs@3.1.1/dist/cdn.min.js"></script>
         <title>Bee Saver - Sauvons les abeilles</title>
     </head>
-    <body class="font-openSans">
-        <!-- Header -->
+    <body class="font-openSans" x-data="{isOpen: false}">
         <header>
             <div class="bg-gradient-to-tr from-yellow-400 to-yellow-300 w-full py-4 px-10 shadow-sm fixed z-50" x-data="{isOpen: false}">
                 <div class="max-w-screen-lg mx-auto flex justify-between items-center text-gray-800">
                     <div class="flex items-center space-x-2">
-                        <img src="images/logo.png" alt="Logo Bee Saver" class="h-10 w-auto hidden sm:block">
+                        <img 
+                            src="images/logo.png" 
+                            alt="Logo Bee Saver" 
+                            class="h-10 w-auto hidden sm:block"
+                        >
                         <div class="text-4xl uppercase">
                             <span class="font-bold">Bee</span>
                             <span class="font-light">Saver</span>
                         </div>
                     </div>
-                    <!-- Desktop Nav -->
                     <nav class="hidden lg:block">
                         <ul class="flex space-x-4">
                             <li>
-                                <a href="#le-declin" class="inline-block pt-4 pb-2 border-b-4 border-transparent hover:border-gray-800">Le déclin</a>
+                                <a 
+                                    href="index.html#le-declin" 
+                                    class="inline-block pt-4 pb-2 border-b-4 border-transparent hover:border-gray-800"
+                                >Le déclin</a>
                             </li>
                             <li>
-                                <a href="#les-causes" class="inline-block pt-4 pb-2 border-b-4 border-transparent hover:border-gray-800">Les causes</a>
+                                <a 
+                                    href="index.html#les-causes" 
+                                    class="inline-block pt-4 pb-2 border-b-4 border-transparent hover:border-gray-800"
+                                >Les causes</a>
                             </li>
                             <li>
-                                <a href="#les-consequences" class="inline-block pt-4 pb-2 border-b-4 border-transparent hover:border-gray-800">Les conséquences</a>
+                                <a 
+                                    href="index.html#les-consequences" 
+                                    class="inline-block pt-4 pb-2 border-b-4 border-transparent hover:border-gray-800"
+                                >Les conséquences</a>
                             </li>
                             <li>
-                                <a href="#les-gestes" class="inline-block pt-4 pb-2 border-b-4 border-transparent hover:border-gray-800">Les gestes à adopter</a>
+                                <a 
+                                    href="index.html#les-gestes" 
+                                    class="inline-block pt-4 pb-2 border-b-4 border-transparent hover:border-gray-800"
+                                >Les gestes à adopter</a>
                             </li>
                             <li>
-                                <a href="evenements.html" class="inline-block pt-4 pb-2 border-b-4 border-transparent hover:border-gray-800">Les événements</a>
+                                <a 
+                                    href="evenements.html" 
+                                    class="inline-block pt-4 pb-2 border-b-4 border-transparent hover:border-gray-800"
+                                >Les événements</a>
                             </li>
                         </ul>
                     </nav>
                     <div class="lg:hidden cursor-pointer" @click="isOpen = !isOpen">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                          </svg>
+                        <svg 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            class="h-8 w-8" 
+                            fill="none" 
+                            viewBox="0 0 24 24" 
+                            stroke="currentColor">
+                            <path 
+                                stroke-linecap="round" 
+                                stroke-linejoin="round" 
+                                stroke-width="2" 
+                                d="M4 6h16M4 12h16M4 18h16" 
+                            />
+                        </svg>
                     </div>
                 </div>
-                <!-- Mobile Nav -->
-                <nav class="bg-gray-900 text-gray-50 absolute top-full w-full text-center py-6 right-0" x-show="isOpen" @click.away="isOpen = false" @click="isOpen = false">
+                <nav 
+                    class="bg-gray-900 text-gray-50 absolute top-full w-full text-center py-6 right-0" 
+                    x-show="isOpen" 
+                    @click.away="isOpen = false" 
+                    @click="isOpen = false"
+                >
                     <ul class="space-y-4">
                         <li>
-                            <a href="#le-declin" class="inline-block pt-4 pb-2 border-b-4 border-transparent hover:border-gray-50">Le déclin</a>
+                            <a 
+                                href="index.html#le-declin" 
+                                class="inline-block pt-4 pb-2 border-b-4 border-transparent hover:border-gray-50"
+                            >Le déclin</a>
                         </li>
                         <li>
-                            <a href="#les-causes" class="inline-block pt-4 pb-2 border-b-4 border-transparent hover:border-gray-50">Les causes</a>
+                            <a 
+                                href="index.html#les-causes" 
+                                class="inline-block pt-4 pb-2 border-b-4 border-transparent hover:border-gray-50"
+                            >Les causes</a>
                         </li>
                         <li>
-                            <a href="#les-consequences" class="inline-block pt-4 pb-2 border-b-4 border-transparent hover:border-gray-50">Les conséquences</a>
+                            <a 
+                                href="index.html#les-consequences" 
+                                class="inline-block pt-4 pb-2 border-b-4 border-transparent hover:border-gray-50"
+                            >Les conséquences</a>
                         </li>
                         <li>
-                            <a href="#les-gestes" class="inline-block pt-4 pb-2 border-b-4 border-transparent hover:border-gray-50">Les gestes à adopter</a>
+                            <a 
+                                href="index.html#les-gestes" 
+                                class="inline-block pt-4 pb-2 border-b-4 border-transparent hover:border-gray-50"
+                            >Les gestes à adopter</a>
                         </li>
                         <li>
-                            <a href="evenements.html" class="inline-block pt-4 pb-2 border-b-4 border-transparent hover:border-gray-50">Les événements</a>
+                            <a 
+                                href="evenements.html" 
+                                class="inline-block pt-4 pb-2 border-b-4 border-transparent hover:border-gray-50"
+                            >Les événements</a>
                         </li>
                     </ul>
                 </nav>
             </div>
-            <!-- Hero -->
             <div class="min-h-screen bg-hero-sm md:bg-hero-md lg:bg-hero bg-cover bg-center flex px-10 py-24">
                 <div class="m-auto w-full sm:w-auto grid lg:grid-cols-2 gap-4 sm:gap-8 md:gap-16 items-center">
                     <div class="text-gray-900 md:space-y-2 text-center lg:text-left">
@@ -81,16 +127,27 @@
                     <div class="bg-white rounded-lg shadow-sm p-4 md:p-10 w-full">
                         <h2 class="mb-6 text-xl text-center">Je soutiens <span class="font-bold">Bee Saver</span></h2>
                         <form method="post">
-                            <div class="mb-3 grid grid-cols-2 sm:grid-cols-4 gap-4 md:gap-8">
-                                <div class="rounded px-6 py-4 bg-gray-200 text-gray-800 text-center cursor-pointer hover:bg-yellow-300">5€</div>
-                                <div class="rounded px-6 py-4 bg-gray-200 text-gray-800 text-center cursor-pointer hover:bg-yellow-300">10€</div>
-                                <div class="rounded px-6 py-4 bg-gray-200 text-gray-800 text-center cursor-pointer hover:bg-yellow-300">15€</div>
-                                <div class="rounded px-6 py-4 bg-gray-200 text-gray-800 text-center cursor-pointer hover:bg-yellow-300">20€</div>
+                            <div class="mb-3 grid grid-cols-2 sm:grid-cols-4 gap-4">
+                                <label for="donation-5" class="rounded px-6 py-4 bg-gray-200 text-gray-800 text-center cursor-pointer hover:bg-yellow-300">5€
+                                    <input type="radio" id="donation-5" name="donation" value="5" class="hidden">
+                                </label>
+
+                                <label for="donation-10" class="rounded px-6 py-4 bg-gray-200 text-gray-800 text-center cursor-pointer hover:bg-yellow-300">10€
+                                    <input type="radio" id="donation-10" name="donation" value="10" class="hidden">
+                                </label>
+
+                                <label for="donation-15" class="rounded px-6 py-4 bg-gray-200 text-gray-800 text-center cursor-pointer hover:bg-yellow-300">15€
+                                    <input type="radio" id="donation-15" name="donation" value="15" class="hidden">
+                                </label>
+
+                                <label for="donation-20" class="rounded px-6 py-4 bg-gray-200 text-gray-800 text-center cursor-pointer hover:bg-yellow-300">20€
+                                    <input type="radio" id="donation-20" name="donation" value="20" class="hidden">
+                                </label>
                             </div>
 
                             <div class="mb-3">
                                 <label for="amount" class="block mb-1">Montant au choix</label>
-                                <input type="number" id="amount" amount="amount" class="w-full rounded bg-gray-200 p-4 focus:outline-none focus:ring focus:ring-gray-400 focus:ring-opacity-50">
+                                <input type="number" id="amount" name="amount" class="w-full rounded bg-gray-200 p-4 focus:outline-none focus:ring focus:ring-gray-400 focus:ring-opacity-50">
                             </div>
 
                             <button type="submit" class="rounded-sm bg-yellow-300 text-gray-800 px-4 py-4 w-full text-lg font-bold flex items-center justify-center space-x-4 transition hover:bg-yellow-400 focus:outline-none focus:ring focus:ring-yellow-400 focus:ring-opacity-50">
@@ -104,8 +161,6 @@
                 </div>
             </div>
         </header>
-
-        <!-- Section 1 -->
         <section class="bg-gray-100 px-10" id="le-declin">
             <div class="max-w-screen-lg mx-auto py-8 md:py-24 grid md:grid-cols-2 items-center gap-4 md:gap-16">
                 <div>
@@ -115,18 +170,30 @@
                     </p>
                 </div>
                 <picture>
-                    <source srcset="images/bee-sm.jpg" media="(max-width: 40em)" class="rounded-lg h-64 md:h-96 w-full object-cover object-center">
-                    <img srcset="images/bee.jpg" alt="Photo d'une abeille" class="rounded-lg h-64 md:h-96 w-full object-cover object-center">
+                    <source 
+                        srcset="images/bee-sm.jpg" 
+                        media="(max-width: 40em)"
+                    >
+                    <img 
+                        src="images/bee.jpg" 
+                        alt="Photo d'une abeille" 
+                        class="rounded-lg h-64 md:h-96 w-full object-cover object-center"
+                    >
                 </picture>
             </div>
         </section>
-
-        <!-- Section 2 -->
         <section class="px-10" id="les-causes">
             <div class="max-w-screen-lg mx-auto py-8 md:py-24 grid md:grid-cols-2 items-center gap-4 md:gap-16">
                 <picture class="order-1">
-                    <source srcset="images/bee-2-sm.jpg" media="(max-width: 40em)" class="rounded-lg h-64 md:h-96 w-full object-cover object-center">
-                    <img srcset="images/bee-2.jpg" alt="Photo d'une abeille" class="rounded-lg h-64 md:h-96 w-full object-cover object-center">
+                    <source 
+                        srcset="images/bee-2-sm.jpg" 
+                        media="(max-width: 40em)"
+                    >
+                    <img 
+                        src="images/bee-2.jpg" 
+                        alt="Photo d'une abeille" 
+                        class="rounded-lg h-64 md:h-96 w-full object-cover object-center"
+                    >
                 </picture>
                 <div class="md:order-1">
                     <h3 class="font-bold text-2xl text-gray-800 mb-6">Les causes de la disparition des abeilles</h3>
@@ -136,8 +203,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- Section 3 -->
         <section class="bg-gray-100 px-10" id="les-consequences">
             <div class="max-w-screen-lg mx-auto py-8 md:py-24 grid md:grid-cols-2 items-center gap-4 md:gap-16">
                 <div>
@@ -147,13 +212,18 @@
                     </p>
                 </div>
                 <picture>
-                    <source srcset="images/bee-3-sm.jpg" media="(max-width: 40em)" class="rounded-lg h-64 md:h-96 w-full object-cover object-center">
-                    <img srcset="images/bee-3.jpg" alt="Photo d'une abeille" class="rounded-lg h-64 md:h-96 w-full object-cover object-center">
+                    <source 
+                        srcset="images/bee-3-sm.jpg" 
+                        media="(max-width: 40em)"
+                    >
+                    <img 
+                        src="images/bee-3.jpg" 
+                        alt="Photo d'une abeille" 
+                        class="rounded-lg h-64 md:h-96 w-full object-cover object-center"
+                    >
                 </picture>
             </div>
         </section>
-
-        <!-- Section 4 -->
         <section class="bg-yellow-300 py-8 md:py-24" id="les-gestes">
             <div class="max-w-screen-lg mx-auto px-10">
                 <h3 class="text-3xl font-bold text-center tracking-wide mb-10 text-gray-800">Les gestes à adopter</h3>
@@ -185,7 +255,6 @@
                 </div>
             </div>
         </section>
-        <!-- Footer -->
         <footer class="bg-gray-900 text-gray-100 py-16">
             <div class="max-w-screen-lg mx-auto grid md:grid-cols-3 divide-y divide-gray-500 md:divide-y-0 justify-items-center items-center px-10">
                 <div class="text-center space-y-1 p-6 md:p-0">
