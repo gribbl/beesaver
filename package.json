@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "build": "postcss src/style.css -o public/tailwind.css"
+    "build": "postcss tailwind.css -o style.css"
   },
   "keywords": [],
   "author": "JeanDevFR",
