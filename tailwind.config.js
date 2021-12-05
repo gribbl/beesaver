@@ -1,19 +1,20 @@
 module.exports = {
-  purge: [],
+  mode: "jit",
+  purge: ["./*.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      'openSans': ['Open Sans', 'sans-serif']
+      openSans: ["Open Sans", "sans-serif"],
     },
     extend: {
-      backgroundImage: theme => ({
-        'hero': "url('images/hero.jpg')",
-        'hero-sm': "url('images/hero-sm.jpg')",
-      })
+      backgroundImage: (theme) => ({
+        hero: "url('images/hero.jpg')",
+        "hero-sm": "url('images/hero-sm.jpg')",
+      }),
     },
   },
   variants: {
     extend: {},
   },
   plugins: [],
-}
+};
