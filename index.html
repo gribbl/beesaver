@@ -19,6 +19,7 @@
     ></script>
     <title>Bee Saver - Sauvons les abeilles</title>
   </head>
+
   <body class="font-openSans">
     <header x-data="{mobileNav: false, dropdown: false}">
       <div
@@ -102,8 +103,9 @@
                         block
                         whitespace-nowrap
                       "
-                      >Le déclin</a
                     >
+                      Le déclin
+                    </a>
                   </li>
                   <li>
                     <a
@@ -117,8 +119,9 @@
                         block
                         whitespace-nowrap
                       "
-                      >Les causes</a
                     >
+                      Les causes
+                    </a>
                   </li>
                   <li>
                     <a
@@ -132,12 +135,13 @@
                         block
                         whitespace-nowrap
                       "
-                      >Les conséquences</a
                     >
+                      Les conséquences
+                    </a>
                   </li>
                   <li>
                     <a
-                      href="index.html#les-gestes"
+                      href="index.html#les-gestes-a-adopter"
                       class="
                         rounded-b
                         bg-gray-800
@@ -148,8 +152,9 @@
                         block
                         whitespace-nowrap
                       "
-                      >Les gestes à adopter</a
                     >
+                      Les gestes à adopter
+                    </a>
                   </li>
                 </ul>
               </li>
@@ -163,8 +168,9 @@
                     border-b-4 border-transparent
                     hover:border-gray-800
                   "
-                  >Les événements</a
                 >
+                  Les événements
+                </a>
               </li>
               <li>
                 <a
@@ -176,8 +182,9 @@
                     border-b-4 border-transparent
                     hover:border-gray-800
                   "
-                  >Nous contacter</a
                 >
+                  Nous contacter
+                </a>
               </li>
             </ul>
           </nav>
@@ -225,8 +232,9 @@
                   border-b-4 border-transparent
                   hover:border-gray-50
                 "
-                >Le déclin</a
               >
+                Le déclin
+              </a>
             </li>
             <li>
               <a
@@ -238,8 +246,9 @@
                   border-b-4 border-transparent
                   hover:border-gray-50
                 "
-                >Les causes</a
               >
+                Les causes
+              </a>
             </li>
             <li>
               <a
@@ -251,8 +260,9 @@
                   border-b-4 border-transparent
                   hover:border-gray-50
                 "
-                >Les conséquences</a
               >
+                Les conséquences
+              </a>
             </li>
             <li>
               <a
@@ -264,8 +274,9 @@
                   border-b-4 border-transparent
                   hover:border-gray-50
                 "
-                >Les gestes à adopter</a
               >
+                Les gestes à adopter
+              </a>
             </li>
             <li>
               <a
@@ -277,8 +288,9 @@
                   border-b-4 border-transparent
                   hover:border-gray-50
                 "
-                >Les événements</a
               >
+                Les événements
+              </a>
             </li>
             <li>
               <a
@@ -290,14 +302,207 @@
                   border-b-4 border-transparent
                   hover:border-gray-50
                 "
-                >Nous contacter</a
               >
+                Nous contacter
+              </a>
             </li>
           </ul>
         </nav>
       </div>
+      <div
+        class="
+          min-h-screen
+          bg-hero-sm
+          lg:bg-hero
+          bg-cover bg-center
+          flex
+          px-10
+          pb-24
+          pt-32
+          lg:pt-40
+        "
+      >
+        <div
+          class="
+            m-auto
+            w-full
+            sm:w-auto
+            grid
+            lg:grid-cols-2
+            gap-4
+            sm:gap-8
+            md:gap-16
+            items-center
+          "
+        >
+          <div class="text-gray-900 md:space-y-2 text-center lg:text-left">
+            <span
+              class="text-xs md:text-normal uppercase font-bold tracking-wide"
+            >
+              Notre écosystème est menacé
+            </span>
+            <h1 class="text-2xl md:text-5xl font-light">
+              Sauvons les abeilles
+            </h1>
+          </div>
+          <div class="bg-white rounded-lg shadow-sm p-4 md:p-10 w-full">
+            <h2 class="mb-6 text-xl text-center">
+              Je soutiens
+              <span class="font-bold">Bee Saver</span>
+            </h2>
+            <form method="post">
+              <div class="mb-3 grid grid-cols-2 sm:grid-cols-4 gap-4">
+                <label
+                  for="donation-5"
+                  class="
+                    rounded
+                    px-6
+                    py-4
+                    bg-gray-200
+                    text-gray-800 text-center
+                    cursor-pointer
+                    hover:bg-yellow-300
+                  "
+                >
+                  5€
+                  <input
+                    type="radio"
+                    id="donation-5"
+                    name="donation"
+                    value="5"
+                    class="hidden"
+                  />
+                </label>
+
+                <label
+                  for="donation-10"
+                  class="
+                    rounded
+                    px-6
+                    py-4
+                    bg-gray-200
+                    text-gray-800 text-center
+                    cursor-pointer
+                    hover:bg-yellow-300
+                  "
+                >
+                  10€
+                  <input
+                    type="radio"
+                    id="donation-10"
+                    name="donation"
+                    value="10"
+                    class="hidden"
+                  />
+                </label>
+
+                <label
+                  for="donation-15"
+                  class="
+                    rounded
+                    px-6
+                    py-4
+                    bg-gray-200
+                    text-gray-800 text-center
+                    cursor-pointer
+                    hover:bg-yellow-300
+                  "
+                >
+                  15€
+                  <input
+                    type="radio"
+                    id="donation-15"
+                    name="donation"
+                    value="15"
+                    class="hidden"
+                  />
+                </label>
+
+                <label
+                  for="donation-20"
+                  class="
+                    rounded
+                    px-6
+                    py-4
+                    bg-gray-200
+                    text-gray-800 text-center
+                    cursor-pointer
+                    hover:bg-yellow-300
+                  "
+                >
+                  20€
+                  <input
+                    type="radio"
+                    id="donation-20"
+                    name="donation"
+                    value="20"
+                    class="hidden"
+                  />
+                </label>
+              </div>
+
+              <div class="mb-3">
+                <label for="amount" class="block mb-1">Montant au choix</label>
+                <input
+                  type="number"
+                  id="amount"
+                  name="amount"
+                  class="
+                    w-full
+                    rounded
+                    bg-gray-200
+                    p-4
+                    focus:outline-none
+                    focus:ring
+                    focus:ring-gray-400
+                    focus:ring-opacity-50
+                  "
+                />
+              </div>
+
+              <button
+                type="submit"
+                class="
+                  rounded-sm
+                  bg-yellow-300
+                  text-gray-800
+                  px-4
+                  py-4
+                  w-full
+                  text-lg
+                  font-bold
+                  flex
+                  items-center
+                  justify-center
+                  space-x-4
+                  transition
+                  hover:bg-yellow-400
+                  focus:outline-none
+                  focus:ring
+                  focus:ring-yellow-400
+                  focus:ring-opacity-50
+                "
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span>Je fais un don</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </header>
-    <section class="bg-gray-100 px-10 pt-16" id="le-declin">
+    <section class="bg-gray-100 px-10" id="le-declin">
       <div
         class="
           max-w-screen-lg
@@ -410,7 +615,7 @@
         </picture>
       </div>
     </section>
-    <section class="bg-yellow-300 py-8 md:py-24" id="les-gestes">
+    <section class="bg-yellow-300 py-8 md:py-24" id="les-gestes-a-adopter">
       <div class="max-w-screen-lg mx-auto px-10">
         <h3
           class="
@@ -569,32 +774,35 @@
 
         <ul class="text-center w-full space-y-1 text-gray-400 p-6 md:p-0">
           <li>
-            <a href="index.html#le-declin" class="hover:text-gray-200"
-              >Le déclin</a
-            >
+            <a href="index.html#le-declin" class="hover:text-gray-200">
+              Le déclin
+            </a>
           </li>
           <li>
-            <a href="index.html#les-causes" class="hover:text-gray-200"
-              >Les causes</a
-            >
+            <a href="index.html#les-causes" class="hover:text-gray-200">
+              Les causes
+            </a>
           </li>
           <li>
-            <a href="index.html#les-consequences" class="hover:text-gray-200"
-              >Les conséquences</a
-            >
+            <a href="index.html#les-consequences" class="hover:text-gray-200">
+              Les conséquences
+            </a>
           </li>
           <li>
-            <a href="index.html#les-gestes" class="hover:text-gray-200"
-              >Les gestes à adopter</a
+            <a
+              href="index.html#les-gestes-a-adopter"
+              class="hover:text-gray-200"
             >
+              Les gestes à adopter
+            </a>
           </li>
           <li>
             <a href="events.html" class="hover:text-gray-200">Les événements</a>
           </li>
           <li>
-            <a href="contact.html" class="hover:text-gray-200"
-              >Nous contacter</a
-            >
+            <a href="contact.html" class="hover:text-gray-200">
+              Nous contacter
+            </a>
           </li>
         </ul>
 
