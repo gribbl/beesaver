@@ -19,6 +19,7 @@
     ></script>
     <title>Bee Saver - Les événements organisés par l'association</title>
   </head>
+
   <body class="font-openSans">
     <header x-data="{mobileNav: false, dropdown: false}">
       <div
@@ -84,7 +85,7 @@
                   </svg>
                 </button>
                 <ul
-                  class="absolute right-0"
+                  class="absolute right-0 pt"
                   @click.stop="dropdown = false"
                   x-show="dropdown"
                   x-cloak
@@ -102,8 +103,9 @@
                         block
                         whitespace-nowrap
                       "
-                      >Le déclin</a
                     >
+                      Le déclin
+                    </a>
                   </li>
                   <li>
                     <a
@@ -117,8 +119,9 @@
                         block
                         whitespace-nowrap
                       "
-                      >Les causes</a
                     >
+                      Les causes
+                    </a>
                   </li>
                   <li>
                     <a
@@ -132,12 +135,13 @@
                         block
                         whitespace-nowrap
                       "
-                      >Les conséquences</a
                     >
+                      Les conséquences
+                    </a>
                   </li>
                   <li>
                     <a
-                      href="index.html#les-gestes"
+                      href="index.html#les-gestes-a-adopter"
                       class="
                         rounded-b
                         bg-gray-800
@@ -148,8 +152,9 @@
                         block
                         whitespace-nowrap
                       "
-                      >Les gestes à adopter</a
                     >
+                      Les gestes à adopter
+                    </a>
                   </li>
                 </ul>
               </li>
@@ -163,8 +168,9 @@
                     border-b-4 border-transparent
                     hover:border-gray-800
                   "
-                  >Les événements</a
                 >
+                  Les événements
+                </a>
               </li>
               <li>
                 <a
@@ -176,8 +182,9 @@
                     border-b-4 border-transparent
                     hover:border-gray-800
                   "
-                  >Nous contacter</a
                 >
+                  Nous contacter
+                </a>
               </li>
             </ul>
           </nav>
@@ -225,8 +232,9 @@
                   border-b-4 border-transparent
                   hover:border-gray-50
                 "
-                >Le déclin</a
               >
+                Le déclin
+              </a>
             </li>
             <li>
               <a
@@ -238,8 +246,9 @@
                   border-b-4 border-transparent
                   hover:border-gray-50
                 "
-                >Les causes</a
               >
+                Les causes
+              </a>
             </li>
             <li>
               <a
@@ -251,8 +260,9 @@
                   border-b-4 border-transparent
                   hover:border-gray-50
                 "
-                >Les conséquences</a
               >
+                Les conséquences
+              </a>
             </li>
             <li>
               <a
@@ -264,8 +274,9 @@
                   border-b-4 border-transparent
                   hover:border-gray-50
                 "
-                >Les gestes à adopter</a
               >
+                Les gestes à adopter
+              </a>
             </li>
             <li>
               <a
@@ -277,8 +288,9 @@
                   border-b-4 border-transparent
                   hover:border-gray-50
                 "
-                >Les événements</a
               >
+                Les événements
+              </a>
             </li>
             <li>
               <a
@@ -290,8 +302,9 @@
                   border-b-4 border-transparent
                   hover:border-gray-50
                 "
-                >Nous contacter</a
               >
+                Nous contacter
+              </a>
             </li>
           </ul>
         </nav>
@@ -343,8 +356,9 @@
                 rounded
                 text-sm
               "
-              >Il y a 1 semaine</span
             >
+              Il y a 1 semaine
+            </span>
           </div>
         </div>
 
@@ -390,8 +404,9 @@
                 rounded
                 text-sm
               "
-              >Il y a 1 mois</span
             >
+              Il y a 1 mois
+            </span>
           </div>
         </div>
 
@@ -437,8 +452,9 @@
                 rounded
                 text-sm
               "
-              >Il y a 3 mois</span
             >
+              Il y a 3 mois
+            </span>
           </div>
         </div>
       </div>
@@ -465,32 +481,35 @@
 
         <ul class="text-center w-full space-y-1 text-gray-400 p-6 md:p-0">
           <li>
-            <a href="index.html#le-declin" class="hover:text-gray-200"
-              >Le déclin</a
-            >
+            <a href="index.html#le-declin" class="hover:text-gray-200">
+              Le déclin
+            </a>
           </li>
           <li>
-            <a href="index.html#les-causes" class="hover:text-gray-200"
-              >Les causes</a
-            >
+            <a href="index.html#les-causes" class="hover:text-gray-200">
+              Les causes
+            </a>
           </li>
           <li>
-            <a href="index.html#les-consequences" class="hover:text-gray-200"
-              >Les conséquences</a
-            >
+            <a href="index.html#les-consequences" class="hover:text-gray-200">
+              Les conséquences
+            </a>
           </li>
           <li>
-            <a href="index.html#les-gestes" class="hover:text-gray-200"
-              >Les gestes à adopter</a
+            <a
+              href="index.html#les-gestes-a-adopter"
+              class="hover:text-gray-200"
             >
+              Les gestes à adopter
+            </a>
           </li>
           <li>
             <a href="events.html" class="hover:text-gray-200">Les événements</a>
           </li>
           <li>
-            <a href="contact.html" class="hover:text-gray-200"
-              >Nous contacter</a
-            >
+            <a href="contact.html" class="hover:text-gray-200">
+              Nous contacter
+            </a>
           </li>
         </ul>
 
